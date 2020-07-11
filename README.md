@@ -80,15 +80,16 @@ return bestScore
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### OPTIMIZATION TECHNIQUE:
+### OPTIMIZATION TECHNIQUE:  
+  
 With the variation of letting the AI agent play the first chance, the algorithm was taking an unusually high time to decide its move. This is due to the agent building all the possible cases and going till the terminal depth of the board. To eradicate this lag we made use of the game theory of tic-tac-toe.  
 
-Most experienced tic-tac-toe players put the first marker in a corner when they get to play first. This gives the opponent the most opportunities to make a mistake.  
+Most experienced tic-tac-toe players put the first marker in a corner when they get to play first. This gives the opponent the most opportunities to make a mistake.    
 Given the chance to play the first move, we asked our AI agent to pick a random corner from a list of all corners on the board.  
-This technique, however small, reduced the initial time of picking a move from 9.016 seconds to 0.0001 seconds!  
+This technique, however small, reduced the initial time of picking a move from **9.016 seconds to 0.0001 seconds!**  
 
 Similarly, in Wild Tic-Tac-Toe the best move to be played, to give the opponent the most opportunities to make a mistake was the centre block.   
-Reducing the time from 9.019 seconds to 0.0001 seconds!  
+Reducing the time from **9.019 seconds to 0.0001 seconds!**  
 
 ```python
 				if(all(ele=='blank' for ele in arr)):
