@@ -102,10 +102,10 @@ return bestScore
 :trophy:This technique, however small, reduced the initial time of picking a move from **9.01 seconds to 0.0001 seconds!**:trophy:  
 
 ```python
-				if(all(ele=='blank' for ele in arr)):
-					if(iswild==1):
-						return 4
-					else:
-						return (random.choice([0,2,6,8]))
+if(all(ele=='blank' for ele in arr)):
+	if(iswild==1):
+		return 4
+	else:
+		return (random.choice([0,2,6,8]))
 						
 ``` 
