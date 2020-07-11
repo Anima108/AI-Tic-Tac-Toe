@@ -92,7 +92,7 @@ return bestScore
 - Similarly, in Wild Tic-Tac-Toe the best move to be played, to give the opponent the most opportunities to make a mistake was the **centre block**.  
   
     
-    This technique, however small, reduced the initial time of picking a move from **9.01 seconds to 0.0001 seconds!**  
+:trophy:This technique, however small, reduced the initial time of picking a move from **9.01 seconds to 0.0001 seconds!**:trophy:  
 
 ```python
 				if(all(ele=='blank' for ele in arr)):
