@@ -12,7 +12,7 @@ https://codess-tic-tac-toe.herokuapp.com/
 - [x] **First Move**    : Don't wish to play the first move? No worries!  
 - [x] **Score Tracker** : Keep a track of all the games played yet  
 - [x] **Level**         : Are you a beginner? Or an expert? You'll not be disappointed  
-- [x] **Surprise Element**: Go wild :neckbeard:  
+- [x] **Surprise Element**: Reverse Tic-Tac-Toe. Go wild! :neckbeard:  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
