@@ -18,7 +18,10 @@
 ## Languages Used:
 **Algorithm**- Python  
 **Library used**- random  
-**Frontend**- HTML, CSS, JavaScript    
+**Frontend**- HTML, CSS, JavaScript   
+
+------------------------------------------
+# Important Code Segments  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## MiniMax Algorithm:
