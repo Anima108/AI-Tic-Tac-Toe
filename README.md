@@ -89,7 +89,7 @@ return bestScore
 	- Given the chance to play the first move, we asked our AI agent to pick a **random corner** from a list of all corners on the board.  
 This technique, however small, reduced the initial time of picking a move from **9.016 seconds to 0.0001 seconds!**  
 
-- Similarly, in Wild Tic-Tac-Toe the best move to be played, to give the opponent the most opportunities to make a mistake was the **centre block**.     
+- Similarly, in Wild Tic-Tac-Toe the best move to be played, to give the opponent the most opportunities to make a mistake was the **centre block**.  
 Reducing the time from **9.019 seconds to 0.0001 seconds!**  
 
 ```python
