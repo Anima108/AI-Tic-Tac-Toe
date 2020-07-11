@@ -80,7 +80,7 @@ return bestScore
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### OPTIMIZATION TECHNIQUE:  
+## Optimization Technique:  
   
 With the variation of letting the AI agent play the first chance, the algorithm was taking an unusually high time to decide its move. This is due to the agent building all the possible cases and going till the terminal depth of the board. To eradicate this lag we made use of the game theory of tic-tac-toe.  
 
