@@ -107,4 +107,5 @@ return bestScore
 						return 4
 					else:
 						return (random.choice([0,2,6,8]))
-						``` 
+						
+``` 
