@@ -52,6 +52,13 @@ if result!=None:
 	return score
 ``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Maximizing the Score
+In this segment of the code we are trying to Maximize the score for the AI bot.   
+High score is given to a move which will possibly lead us to a win, or in other words is the most optimal move.
+We check for the available moves at a particular depth and call the function recursively, alternating between isMaximizing and !isMaximizing.  
+!isMaximizing is used to check a move for the Human player, where the lowest score is given to the possibility of reaching to a state where Human wins.  
+bestScore tries to catch the score for the most optimal move.   
+
 ```python
 # Turn of Maximizing player(this player will always try to maximize the score)
 # We will check the score of every move and will return the maximum one.
@@ -69,6 +76,14 @@ bestScore = -1000
 return bestScore
 ```  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Minimizing the Score
+In this segment of the code we are trying to Minimize the score for the opponent.   
+The catch here is, due to the marking scheme opted, a low score is assigned to the best move (the most optimal move gets the worst score), therefore choosing a low score  
+move means, we are assuming that Human is very smart and hence, we are not risking our chances of winning by picking a suboptimal move.    
+We check for the available moves at a particular depth and call the function recursively, alternating between !isMaximizing and isMaximizing.  
+!isMaximizing is used to check a move for the Human player, where the lowest score is given to the possibility of reaching to a state where Human wins.  
+bestScore tries to catch the score for the most optimal move.  
+
 ```python
 # Turn of Minimizing player(this player will always try to minimize the score)
 # We will check the score of every move and will return the minimum one.
