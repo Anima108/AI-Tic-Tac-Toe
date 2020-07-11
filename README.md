@@ -26,8 +26,8 @@ if result!=None:
 	return score
 ```  
 ```python
-#Turn of Maximizing player(this player will always try to maximize the score)
-# we will check the score of every move and will return the maximum one.
+# Turn of Maximizing player(this player will always try to maximize the score)
+# We will check the score of every move and will return the maximum one.
 if(isMaximizing):
 bestScore = -1000
 	for i in range(3):
@@ -42,8 +42,8 @@ bestScore = -1000
 return bestScore
 ```  
 ```python
-#Turn of Minimizing player(this player will always try to minimize the score)
-# we will check the score of every move and will return the minimum one.
+# Turn of Minimizing player(this player will always try to minimize the score)
+# We will check the score of every move and will return the minimum one.
 if(!isMaximizing):
 	bestScore = 1000
 	for i in range(3):
