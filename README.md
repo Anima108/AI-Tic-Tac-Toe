@@ -5,13 +5,13 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Have a Personalised Experience at Mars!  
-**Alien**:alien:  : Opponent  
-**Human**:woman:  : Player
-**Marker**        : Select your own marker ⭕️/❌
-**First Move**    : Don't wish to play the first move? No worries!
-**Score Tracker** : Keep a track of all the games played yet
-**Level**         : Are you a beginner? Or an expert? You'll not be disappointed
-**Surprise Element**: Go wild :neckbeard:
+**Alien**:alien:  : Opponent    
+**Human**:woman:  : Player  
+**Marker**        : Select your own marker ⭕️/❌  
+**First Move**    : Don't wish to play the first move? No worries!  
+**Score Tracker** : Keep a track of all the games played yet  
+**Level**         : Are you a beginner? Or an expert? You'll not be disappointed  
+**Surprise Element**: Go wild :neckbeard:  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
