@@ -20,9 +20,6 @@
 **Library used**- random  
 **Frontend**- HTML, CSS, JavaScript   
 
-------------------------------------------
-# Important Code Segments  
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## MiniMax Algorithm:
 MiniMax algorithm provides an optimal move for the player assuming that the opponent is also playing optimally.  
@@ -34,6 +31,9 @@ It proceeds all the way down to the terminal node of the tree, then backtracks t
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/minimax2.png "MiniMax")
 
 ----------------------------------------------------------------------
+# Important Code Segments  
+------------------------------------------
+
 ### Addition of Depth  
 Our Algorithm, makes use of 'maxdepth' to limit the difficulty level of the game against alien.  
 At each recursive call from one given state 'depth' is incremented by one;
