@@ -71,15 +71,15 @@ bestScore tries to catch the score for the most optimal move.
 # Turn of Maximizing player(this player will always try to maximize the score)
 # We will check the score of every move and will return the maximum one.
 if(isMaximizing):
-bestScore = -1000
-	for i in range(3):
-		for j in range(3):
-			#Is the spot available?
-			if board[i][j]=='blank':
-				board[i][j] = ai
-				score = minimax(board,depth+1,False)
-				board[i][j]='blank'
-				bestScore = max(score, bestScore)
+	bestScore = -1000
+		for i in range(3):
+			for j in range(3):
+				#Is the spot available?
+				if board[i][j]=='blank':
+					board[i][j] = ai
+					score = minimax(board,depth+1,False)
+					board[i][j]='blank'
+					bestScore = max(score, bestScore)
 
 return bestScore
 ```  
