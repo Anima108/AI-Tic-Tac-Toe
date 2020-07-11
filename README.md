@@ -82,7 +82,8 @@ return bestScore
 
 ## Optimization Technique:  
   
-With the variation of letting the AI agent play the first chance, the algorithm was taking an unusually high time to decide its move. This is due to the agent building all the possible cases and going till the terminal depth of the board. To eradicate this lag we made use of the game theory of tic-tac-toe.  
+- With the variation of letting the AI agent play the first chance, the algorithm was taking an unusually high time to decide its move. 
+	- This is due to the agent building all the possible cases and going till the terminal depth of the board. To eradicate this lag we made use of the game theory of tic-tac-toe.  
 
 Most experienced tic-tac-toe players put the first marker in a corner when they get to play first. This gives the opponent the most opportunities to make a mistake.    
 Given the chance to play the first move, we asked our AI agent to pick a random corner from a list of all corners on the board.  
