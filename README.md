@@ -5,8 +5,8 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Have a Personalised Experience at Mars!  
-- [x] **Alien**:alien:  : Opponent    
-- [x] **Human**:woman:  : Player  
+- [x] **Alien**:alien:  : AI    
+- [x] **Human**:woman:  : Opponent  
 - [x] **Marker**        : Select your own marker ⭕️/❌  
 - [x] **First Move**    : Don't wish to play the first move? No worries!  
 - [x] **Score Tracker** : Keep a track of all the games played yet  
