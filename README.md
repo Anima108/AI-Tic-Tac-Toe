@@ -21,7 +21,14 @@
 **Frontend**- HTML, CSS, JavaScript    
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## MiniMax Algorithm:
+MiniMax algorithm provides an optimal move for the player assuming that the opponent is also playing optimally.  
+In this algorithm two players play the game, one is called MAX, and the other is called MIN.  
+MAX(:alien:) will select the maximized value and MIN(:woman:) will select the minimized value.  
+It performs a depth-first search algorithm for the exploration of the complete game tree.  
+It proceeds all the way down to the terminal node of the tree, then backtracks the tree as the recursion.  
 
+----------------------------------------------------------------------
 ### Addition of Depth  
 Our Algorithm, makes use of 'maxdepth' to limit the difficulty level of the game against alien.  
 At each recursive call from one given state 'depth' is incremented by one;
