@@ -87,10 +87,6 @@ return bestScore
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![](https://github.com/Anima108/My-Codes/blob/master/src/1_hVbUfzgUGmaXfQ69U4t1wg.gif "Mars Colonization" height="100" width="100")
-
--------------------
-
 ## Optimization Technique:  
   
 - With the variation of letting the **AI agent play the first chance**, the algorithm was taking an **unusually high time to decide its move**. 
