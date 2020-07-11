@@ -28,6 +28,8 @@ MAX(:alien:) will select the maximized value and MIN(:woman:) will select the mi
 It performs a depth-first search algorithm for the exploration of the complete game tree.  
 It proceeds all the way down to the terminal node of the tree, then backtracks the tree as the recursion.  
 
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/minimax2.png "MiniMax")
+
 ----------------------------------------------------------------------
 ### Addition of Depth  
 Our Algorithm, makes use of 'maxdepth' to limit the difficulty level of the game against alien.  
@@ -41,6 +43,8 @@ if depth==maxdepth:
 #Do not call the further function and directly return from here
 	return 0
 ```
+
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/minimax1.png "Depth") 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Do we have a winner yet?
