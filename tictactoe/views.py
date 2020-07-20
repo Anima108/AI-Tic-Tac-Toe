@@ -3,6 +3,8 @@ from django.views.generic import View
 from django.http import HttpResponse
 from django.http import JsonResponse
 import random
+from tictactoe.conversion import *
+from tictactoe.winner import *
 
 class AjaxHandlerView(View):
 	def get(self, request):
@@ -27,19 +29,9 @@ class AjaxHandlerView(View):
 			print(maxdepth)
 			print(optimization)
 
-
-			def onetotwod(arr):
-				board=[[0 for x in range(3)] for y in range(3)]
-				k=0
-				for i in range(3):
-					for j in range(3):
-						board[i][j]=arr[k]
-						k=k+1
-				return board
-
 			ai= opponent
 			human= player
-			board=onetotwod(vector)
+			board= onetotwod(vector)
 			##please check isWild from here
 			##isWild #bool type
 
@@ -49,16 +41,10 @@ class AjaxHandlerView(View):
 				"tie":0
 			}
 
-			def twotooned(row,col):
-				index= col+3*row
-				return index
-
-			board= onetotwod(vector)
-
 
 			def bestMove():
 				#optimization correction
-				if maxdepth==9:
+				if maxdepth==9 and optimization==1:
 					if(all(ele=='blank' for ele in vector)):
 						if(isWild):
 							return 4
@@ -86,38 +72,11 @@ class AjaxHandlerView(View):
 				return index
 
 
-			def checkWinner():
-				Winner = None
-				for i in range(3):
-					if board[i][0]== board[i][1]==board[i][2] and board[i][0]!='blank':
-						Winner = board[i][0]
-				for i in range(3):
-					if board[0][i]== board[1][i]==board[2][i] and board[0][i]!='blank':
-						Winner = board[0][i]
-
-				if board[0][0]==board[1][1]==board[2][2] and board[0][0]!='blank':
-					Winner = board[0][0]
-				if board[2][0]==board[1][1]==board[0][2] and board[2][0]!='blank':
-					Winner = board[2][0]
-
-				openSpots = 0
-				for i in range(3):
-					for j in range(3):
-						if board[i][j] == 'blank':
-							openSpots= openSpots+1
-
-
-				if Winner == None and openSpots == 0:
-					return "tie"
-				else:
-					return Winner
-
-
 			def minimax(board, depth, isMaximizing):
 				if depth==maxdepth:
 					return 0
 
-				result =checkWinner()
+				result =checkWinner(board)
 				if result!=None:
 					score=scores[result]
 					return score
