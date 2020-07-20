@@ -12,6 +12,7 @@ class AjaxHandlerView(View):
 			player_marker= request.GET.get('player_marker')
 			opponent_marker= request.GET.get('opponent_marker')
 			isWild= int(request.GET.get('isWild'))
+			optimization= int(request.GET.get('optimization'))
 
 			if player_marker=='1':
 			    player = 'x'
@@ -24,6 +25,7 @@ class AjaxHandlerView(View):
 			print(player)
 			print(opponent)
 			print(maxdepth)
+			print(optimization)
 
 
 			def onetotwod(arr):
@@ -56,10 +58,7 @@ class AjaxHandlerView(View):
 
 			def bestMove():
 				#optimization correction
-				print("depth is")
-				print(maxdepth)
 				if maxdepth==9:
-					print("depth 9 running")
 					if(all(ele=='blank' for ele in vector)):
 						if(isWild):
 							return 4
@@ -106,6 +105,7 @@ class AjaxHandlerView(View):
 					for j in range(3):
 						if board[i][j] == 'blank':
 							openSpots= openSpots+1
+
 
 				if Winner == None and openSpots == 0:
 					return "tie"
