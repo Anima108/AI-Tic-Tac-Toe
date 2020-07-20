@@ -120,8 +120,9 @@ body{
 	text-align: center;
 }
 
-/* SUGGESTIONS */
-.suggestions{
+/* SUGGESTIONS AND OPTIMIZATION */
+.suggestions,
+.optimization{
   display: none;
   justify-content: center;
   align-items: center;
@@ -131,7 +132,8 @@ body{
   margin-top: -2px;
   margin-bottom: -20%;
 }
-.suggestions.show{
+.suggestions.show,
+.optimization.show{
   display: table;
 }
 .onoff {
@@ -490,11 +492,35 @@ th{
 /* ------------------------------------------------ */
 /*                    ASTRONAUT                     */
 /* ------------------------------------------------ */
-.astronaut img{
+.astronaut {
   height: 60vh;
   position: absolute;
   top: 31%;
   left: 23%;
+}
+.astronaut img{
+  height: 60vh;
+  position: absolute;
+  left: 23%;
+  top: -50px;
+  margin-top: 50px;
+}
+.astronaut a {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: -4%;
+  color: #12cad6;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 170px;
+  text-align: center;
+  white-space: nowrap;
+}
+.astronaut:hover a {
+  display: inline-block;
 }
 
 /* ------------------------------------------------------- */
@@ -504,6 +530,9 @@ th{
   position: absolute;
   right: 16%;
   top:35%;
+}
+.range-slider.hide{
+  display: none;
 }
 .input-range{
   position: absolute;
@@ -696,10 +725,21 @@ input[type=range]:focus {
   }
 
   /* Astronaut */
-  .astronaut img{
+  .astronaut {
     height: 55vh;
     top: 40%;
     left: 25%;
+  }
+  .astronaut img{
+    height: 55vh;
+    left: 25%;
+    top: -50px;
+    margin-top: 50px;
+  }
+  .astronaut a {
+    top: -5%;
+    font-size: 13px;
+    margin-left: 116px;
   }
 
   /* Difficulty Level */
