@@ -14,6 +14,7 @@ var winningRow,
   opponent_marker,            // marker of opponent
   isWild=0,                   // regular tic tac toe
   suggestions=0               // suggestions are disabled
+  optimization=0              // optimization is disabled
   array= new Array(9)       // stores current status of board
 
 
@@ -62,6 +63,10 @@ op.addEventListener("click", (event) => {
     var suggestionText= document.querySelector(".suggestions")
     suggestionText.classList.add("show")
 
+    // Remove optimization option
+    var optimizationText= document.querySelector(".optimization")
+    optimizationText.classList.remove("show")
+
     // Update opponent option
     humanPlayer.innerText= "Human1"
     alienPlayer.innerText= "Human2"
@@ -72,12 +77,19 @@ op.addEventListener("click", (event) => {
     const human2Heading = document.querySelector(".alien-heading")
     human1Heading.innerText= "Human 1"
     human2Heading.innerText= "Human 2"
+
+    // Disable difficulty level
+    document.querySelector(".range-slider").classList.add("hide")
   }
 
   else{                   //Game is against alien
-    // Display suggestions option
+    // Remove suggestions option
     var suggestionText= document.querySelector(".suggestions")
     suggestionText.classList.remove("show")
+
+    // Display optimization option
+    var optimizationText= document.querySelector(".optimization")
+    optimizationText.classList.add("show")
 
     // Update opponent option
     humanPlayer.innerText= "Human"
@@ -89,6 +101,9 @@ op.addEventListener("click", (event) => {
     const alienHeading = document.querySelector(".alien-heading")
     humanHeading.innerText= "Human"
     alienHeading.innerText= "Alien"
+
+    // Enable difficulty level
+    document.querySelector(".range-slider").classList.remove("hide")
   }
 
   // Reset scores
@@ -101,11 +116,25 @@ op.addEventListener("click", (event) => {
 
 // SUGGESTIONS BUTTON
 function checkChoice(){
-  var checkbox = document.getElementById("suggestions-button");
-  if (checkbox.checked == true)
-    suggestions=1;
+  var checkbox = document.getElementById("suggestions-button")
+  if (checkbox.checked == true){
+    suggestions=1
+    difficulty_level=9
+  }
   else
-    suggestions=0;
+    suggestions=0
+  newGame()
+}
+
+// OPTIMIZATION BUTTON
+function checkChoice2(){
+  var checkbox = document.getElementById("optimization-button")
+  if (checkbox.checked == true){
+    optimization=1
+  }
+  else
+    optimization=0
+  console.log(optimization)
   newGame()
 }
 
@@ -168,7 +197,8 @@ range.on('input', function(){
     levelText.classList.add("number")
   }
 
-  newGame()
+  if(opponent==1)       //If opponent is alien
+    newGame()
 });
 
 
@@ -307,7 +337,8 @@ function callAI(){
       difficulty_level: difficulty_level,
       player_marker: player_marker,
       opponent_marker: opponent_marker,
-      isWild: isWild
+      isWild: isWild,
+      optimization: optimization
     },
     contentType: "text/plain",
     success: function (response) {
