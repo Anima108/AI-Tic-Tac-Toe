@@ -4,7 +4,7 @@ def minimax(board, depth, isMaximizing,n):
 	if depth==maxdepth:
 		return 0
 
-	result =checkWinner(board)
+	result =checkWinner(board,n)
 	if result!=None:
 		score=scores[result]
 		return score
