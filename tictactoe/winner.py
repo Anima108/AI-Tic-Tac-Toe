@@ -1,9 +1,9 @@
-def checkWinner(board):
+def checkWinner(board,n):
 	Winner = None
-	for i in range(3):
+	for i in range(n):
 		if board[i][0]== board[i][1]==board[i][2] and board[i][0]!='blank':
 			Winner = board[i][0]
-	for i in range(3):
+	for i in range(n):
 		if board[0][i]== board[1][i]==board[2][i] and board[0][i]!='blank':
 			Winner = board[0][i]
 
@@ -15,8 +15,8 @@ def checkWinner(board):
 
 	openSpots = 0
 
-	for i in range(3):
-		for j in range(3):
+	for i in range(n):
+		for j in range(n):
 			if board[i][j] == 'blank':
 				openSpots= openSpots+1
 
