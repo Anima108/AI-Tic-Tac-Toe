@@ -31,7 +31,7 @@ class AjaxHandlerView(View):
 
 			ai= opponent
 			human= player
-			board= onetotwod(vector)
+			board= onetotwod(vector,n)
 			##please check isWild from here
 			##isWild #bool type
 
@@ -44,7 +44,7 @@ class AjaxHandlerView(View):
 
 			def bestMove():
 				#optimization correction
-				if maxdepth==9 and optimization==1:
+				if maxdepth==n*n and optimization==1:
 					if(all(ele=='blank' for ele in vector)):
 						if(isWild):
 							return 4
@@ -56,19 +56,19 @@ class AjaxHandlerView(View):
 				#creating a list of bestmove
 				move=[]
 				#AI to make its turn
-				for i in range(3):
-					for j in range(3):
+				for i in range(n):
+					for j in range(n):
 						#Is the spot available?
 						if board[i][j]=='blank':
 							board[i][j]=ai #basically =player(us)
-							score=minimax(board,0,False)
+							score=minimax(board,0,False,n)
 							board[i][j]='blank'
 							if score>bestScore:
 								bestScore=score
 								move=[i,j]
 
 				#board[move[0]][move[1]]=ai
-				index=twotooned(move[0],move[1])
+				index=twotooned(move[0],move[1],n)
 				return index
 
 
