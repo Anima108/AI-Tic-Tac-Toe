@@ -81,7 +81,7 @@ body{
 }
 .option ul li {
   float: left;
-	padding: 10px 15px;
+	padding: 7px 15px;
 	border-right: 1px solid #fa1616;
 	cursor: pointer;
 	color: #fa1616;
@@ -229,8 +229,7 @@ body{
 /* -------------------------------------------- */
 /*                    BOARD                     */
 /* -------------------------------------------- */
-.board,
-.board-4 {
+.board {
   width: 65vw;
   height: 90vh;
   display: grid;
@@ -245,11 +244,7 @@ body{
 .board.hide {
   display: none;
 }
-.board-4{
-  grid-template-columns: repeat(4, auto)
-}
-.cell,
-.cell-4 {
+.cell {
   width: var(--cell-size);
   height: var(--cell-size);
   border: 1px solid white;
@@ -259,7 +254,7 @@ body{
   position: relative;
   cursor: pointer;
 }
-.cell-4{
+.cell{
   width: 120px;
   height: 120px;
 }
@@ -267,11 +262,7 @@ body{
 /* REMOVING BORDERS FROM SIDES */
 .cell:first-child,
 .cell:nth-child(2),
-.cell:nth-child(3),
-.cell-4:first-child,
-.cell-4:nth-child(2),
-.cell-4:nth-child(3),
-.cell-4:nth-child(4) {
+.cell:nth-child(3) {
   border-top: none;
 }
 .cell:nth-child(3n + 1) {
