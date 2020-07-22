@@ -15,6 +15,7 @@ class AjaxHandlerView(View):
 			opponent_marker= request.GET.get('opponent_marker')
 			isWild= int(request.GET.get('isWild'))
 			optimization= int(request.GET.get('optimization'))
+			n= 3
 
 			if player_marker=='1':
 			    player = 'x'
@@ -22,12 +23,6 @@ class AjaxHandlerView(View):
 			else:
 			    player= 'circle'
 			    opponent= 'x'
-
-			print(vector)
-			print(player)
-			print(opponent)
-			print(maxdepth)
-			print(optimization)
 
 			ai= opponent
 			human= player
