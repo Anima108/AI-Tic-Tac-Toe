@@ -23,6 +23,10 @@
 **Library used**- random  
 **Frontend**- HTML, CSS, JavaScript   
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Model View Template Diagram
+
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/MVT%20Diagram%20(2).png "MVT")
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## MiniMax Algorithm:
 MiniMax algorithm provides an optimal move for the player assuming that the opponent is also playing optimally.  
