@@ -123,7 +123,22 @@ if(!isMaximizing):
 return bestScore
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Wild Tic-Tac-Toe
+In simple words, WTT is reverse tic-tac-toe! Your ultimate goal is to not let your marker appear consecutively either in a row, column or diagonal. Basically, all you have to   do is to try to lose, to win!
 
+```python
+
+scores={
+	ai:-1 if isWild==1 else 1,
+	human:+1 if isWild==1 else -1,
+	"tie":0
+			}			
+
+```
+
+The above dictonary simply switches the scores of AI and Human if we are playing wild tic-tac-toe. If AI wins (conventionally) we assign the move a lower score and if Human wins we assign the move a higher score (which is reverse of what we were doing otherwise)
+
+----------------------------------------
 ## Optimization Technique:  
   
 - With the variation of letting the **AI agent play the first chance**, the algorithm was taking an **unusually high time to decide its move**. 
