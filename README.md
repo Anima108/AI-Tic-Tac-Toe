@@ -162,11 +162,13 @@ Bootstrap is a free and open-source front-end library for creating websites and 
 
 -------------------------------------------------------------------
 # References:
-[AI Tic-Tac-Toe](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d#:~:text=Minimax%20is%20a%20recursive%20algorithm,minimize%20the%20worst%20case%20scenario)
-[Minimax Algorithm-I](https://www.youtube.com/watch?v=trKjYdBASyQ)
-[Minimax Algorithm-II](https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-3-tic-tac-toe-ai-finding-optimal-move/)
-[Frontend-I](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=1568s)
-[Frontend-II](https://github.com/alialaa/js-tic-tac-toe)
+
+[AI Tic-Tac-Toe](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d#:~:text=Minimax%20is%20a%20recursive%20algorithm,minimize%20the%20worst%20case%20scenario)  
+[Minimax Algorithm-I](https://www.youtube.com/watch?v=trKjYdBASyQ)  
+[Minimax Algorithm-II](https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-3-tic-tac-toe-ai-finding-optimal-move/)  
+[Frontend-I](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=1568s)  
+[Frontend-II](https://github.com/alialaa/js-tic-tac-toe)  
+
 -------------------------------------------------------------------------
 
 
