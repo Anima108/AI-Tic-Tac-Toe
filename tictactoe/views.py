@@ -7,8 +7,8 @@ from tictactoe.conversion import *
 from tictactoe.minimax import *
 
 class AjaxHandlerView(View):
-	def get(self, request):
-		if request.is_ajax():
+	def get(self, request):			#if request is made to send View
+		if request.is_ajax():		#if AJAX call is made from JavaScript
 			vector= request.GET.getlist('array[]')
 			maxdepth= int(request.GET.get('difficulty_level'))
 			player_marker= request.GET.get('player_marker')
