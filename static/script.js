@@ -14,7 +14,7 @@ var winningRow,
   opponent_marker,            // marker of opponent
   isWild=0,                   // regular tic tac toe
   suggestions=0               // suggestions are disabled
-  optimization=0              // optimization is disabled
+  optimization=1              // optimization is enabled
   array= new Array(9)       // stores current status of board
 
 
@@ -130,10 +130,10 @@ function checkChoice(){
 function checkChoice2(){
   var checkbox = document.getElementById("optimization-button")
   if (checkbox.checked == true){
-    optimization=1
+    optimization=0
   }
   else
-    optimization=0
+    optimization=1
   console.log(optimization)
   newGame()
 }
@@ -427,13 +427,23 @@ function gameOver(draw) {
     gameOverText.innerText = "Draw!"
   else {
     if(opponent==1){         //game was against alien
-      if((player_turn==0 && isWild==0) || (player_turn==1 && isWild==1)){
+      if(player_turn==0 && isWild==0){
         gameOverText.innerText = "⭐Human Wins!⭐"
         score= parseInt(player1Score.innerText)
         player1Score.innerText= score+1
       }
-      else if ((player_turn==1 && isWild==0) || (player_turn==0 && isWild==1)) {
+      else if (player_turn==1 && isWild==0) {
         gameOverText.innerText = "⭐Alien Wins!⭐"
+        score= parseInt(player2Score.innerText)
+        player2Score.innerText= score+1
+      }
+      else if (player_turn==1 && isWild==1){
+        gameOverText.innerText = "⭐You Win!⭐"
+        score= parseInt(player1Score.innerText)
+        player1Score.innerText= score+1
+      }
+      else if (player_turn==0 && isWild==1){
+        gameOverText.innerText = "😞 You Lose! 😞"
         score= parseInt(player2Score.innerText)
         player2Score.innerText= score+1
       }
