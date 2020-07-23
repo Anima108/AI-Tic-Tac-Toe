@@ -133,7 +133,8 @@ return bestScore
 ```python
 if(all(ele=='blank' for ele in arr)):
 	if(iswild==1):
-	#each element on the board is indexed as a number 0-8 (sequentially, 0 being board[0][0]......8 being board[2][2]) 
+	#each element on the board is indexed as a number 0-8 (sequentially, 0 being board[0][0]......8 being board[2][2])
+	#return central block
 		return 4
 	else:
 	#corner elements are marked by 0,2,6,8 boxes on the board 
