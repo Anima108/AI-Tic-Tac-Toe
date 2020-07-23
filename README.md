@@ -43,7 +43,7 @@ It proceeds all the way down to the terminal node of the tree, then backtracks t
 # Important Code Segments  
 ------------------------------------------
 
-### Addition of Depth  
+### Addition of Depth :heavy_plus_sign:  
 Our Algorithm, makes use of 'maxdepth' to limit the difficulty level of the game against alien.  
 At each recursive call from one given state 'depth' is incremented by one;
 The variable maxdepth is responsible to keep check, whether the requested difficulty level has been reached or not and further limits the call to the MiniMax Algo.
@@ -75,6 +75,7 @@ if result!=None:
 ``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Maximizing the Score
+
 In this segment of the code we are trying to Maximize the score for the AI bot.   
 High score is given to a move which will possibly lead us to a win, or in other words is the most optimal move.
 We check for the available moves at a particular depth and call the function recursively, alternating between isMaximizing and !isMaximizing.  
@@ -99,6 +100,7 @@ return bestScore
 ```  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Minimizing the Score
+
 In this segment of the code we are trying to Minimize the score for the opponent.   
 The catch here is, due to the marking scheme opted, a low score is assigned to the best move (the most optimal move gets the worst score), therefore choosing a low score  
 move means, we are assuming that Human is very smart and hence, we are not risking our chances of winning by picking a suboptimal move.    
@@ -124,6 +126,7 @@ return bestScore
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Wild Tic-Tac-Toe
+
 In simple words, WTT is reverse tic-tac-toe! Your ultimate goal is to not let your marker appear consecutively either in a row, column or diagonal. Basically, all you have to   do is to try to lose, to win!
 
 ```python
@@ -165,7 +168,7 @@ if(all(ele=='blank' for ele in arr)):
 							
 ``` 
 ----------------------------------------------
-# Frontend
+# Frontend :computer:
 ------------------------------------------------------
 The web app has the following components for the front-end functionality:  
   
@@ -182,7 +185,7 @@ The web app has the following components for the front-end functionality:
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/wireframes.jpg "WireFrames")
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Frameworks Used
+# Frameworks Used :file_folder:
 -----------------------------------------------------------------------------------------------------------------------------------------
 ## Django:
 Django is a free and open-source Python web application framework. Django has the advantages of rapid development and clean, pragmatic design. The web app uses Django for the   back-end implementation of the minimax algorithm. AJAX has been used to communicate with the server-side written in Python from the client-side on the web app.  
