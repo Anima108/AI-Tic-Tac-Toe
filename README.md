@@ -125,7 +125,7 @@ if(!isMaximizing):
 return bestScore
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Wild Tic-Tac-Toe
+### Wild Tic-Tac-Toe :neckbeard:
 
 In simple words, WTT is reverse tic-tac-toe! Your ultimate goal is to not let your marker appear consecutively either in a row, column or diagonal. Basically, all you have to   do is to try to lose, to win!
 
