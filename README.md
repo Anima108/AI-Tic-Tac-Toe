@@ -60,7 +60,7 @@ if depth==maxdepth:
 ### Do we have a winner yet?
 
 This part checks whether we are at an ending position or not yet. Terminating position can be either of the three: AI loses, Human loses, Tie. If we are at any of these  
-states, we send back the score mapped in the python dictionary named score. '+10' if AI wins, '-10' if Human wins, '0' if tie (opposite in the case of Wild Tic-Tac-Toe)    
+states, we send back the score mapped in the python dictionary named score. '+1' if AI wins, '-1' if Human wins, '0' if tie (opposite in the case of Wild Tic-Tac-Toe)    
 If these are not reached then we return None and continue.  
 
 ```python
