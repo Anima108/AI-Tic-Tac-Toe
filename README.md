@@ -197,16 +197,17 @@ Bootstrap is a free and open-source front-end library for creating websites and 
 
 -------------------------------------------------------------------------
 # Future Improvements :dart: :
-**- n x n board**  
-**- Online Integration**  
-**- Alpha Beta Pruning**  
-**- 3-D matrix**  
-**- Mobile compatibility**  
+- n x n board    
+- Online Integration    
+- Alpha Beta Pruning    
+- 3-D matrix    
+- Mobile compatibility    
+
 -------------------------------
-# Contributors :octocat: : 
-[Akanksha](https://github.com/akankshatanwar1701) 
-[Anima](https://github.com/Anima108/)
-[Shreoshi](https://github.com/shreoshi-roy) 
+# Contributors: 
+:octocat: [Akanksha](https://github.com/akankshatanwar1701)  
+:octocat: [Anima](https://github.com/Anima108/)  
+:octocat: [Shreoshi](https://github.com/shreoshi-roy)   
 
 -----------------------------------
 # References :books: :
