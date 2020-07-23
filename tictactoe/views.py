@@ -36,7 +36,7 @@ class AjaxHandlerView(View):
 				"tie":0
 			}
 
-
+			
 			def bestMove():
 				#optimization correction
 				if maxdepth==n*n and optimization==1:
