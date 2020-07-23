@@ -130,5 +130,17 @@ if(all(ele=='blank' for ele in arr)):
 		return 4
 	else:
 		return (random.choice([0,2,6,8]))
-						
+							
 ``` 
+---------------------------------------------------------------------------------------------------------------------------------
+# Frameworks Used
+-----------------------------------------------------------------------------------------------------------------------------------------
+## Django:
+Django is a free and open-source Python web application framework. Django has the advantages of rapid development and clean, pragmatic design. The web app uses Django for the   back-end implementation of the minimax algorithm. AJAX has been used to communicate with the server-side written in Python from the client-side on the web app.  
+
+## Bootstrap UI:
+Bootstrap is a free and open-source front-end library for creating websites and web applications. It contains HTML- and CSS-based design templates for typography, forms,   buttons, navigation and other interface components, as well as optional JavaScript extensions. It aims to ease the development of dynamic websites and web applications. It   has been used mainly for creating rows and columns for proper positioning of elements.  
+
+
+
+
