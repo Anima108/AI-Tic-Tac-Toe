@@ -47,7 +47,7 @@ At each recursive call from one given state 'depth' is incremented by one;
 The variable maxdepth is responsible to keep check, whether the requested difficulty level has been reached or not and further limits the call to the MiniMax Algo.
 
 ```python
-def minimax(board, depth, isMaximizing):
+def minimax(board, depth, isMaximizing,n):
 # Check the depth condition
 if depth==maxdepth:
 #Do not call the further function and directly return from here
@@ -60,7 +60,7 @@ if depth==maxdepth:
 ### Do we have a winner yet?
 ```python
 # Check the winning condition at every situation
-result =checkWinner()
+result =checkWinner(board,n)
 if result!=None:
 	score=scores[result]
 	return score
@@ -78,12 +78,12 @@ bestScore tries to catch the score for the most optimal move.
 # We will check the score of every move and will return the maximum one.
 if(isMaximizing):
 	bestScore = -1000
-		for i in range(3):
-			for j in range(3):
+		for i in range(n):
+			for j in range(n):
 				#Is the spot available?
 				if board[i][j]=='blank':
 					board[i][j] = ai
-					score = minimax(board,depth+1,False)
+					score = minimax(board,depth+1,False,n)
 					board[i][j]='blank'
 					bestScore = max(score, bestScore)
 
@@ -103,12 +103,12 @@ bestScore tries to catch the score for the most optimal move.
 # We will check the score of every move and will return the minimum one.
 if(!isMaximizing):
 	bestScore = 1000
-	for i in range(3):
-		for j in range(3):
+	for i in range(n):
+		for j in range(n):
 			#Is the spot available?
 			if board[i][j]=='blank':
 			board[i][j] = human
-			score = minimax(board,depth+1,True)
+			score = minimax(board,depth+1,True,n)
 			board[i][j]='blank'
 			bestScore = min(score, bestScore)
 
@@ -133,8 +133,10 @@ return bestScore
 ```python
 if(all(ele=='blank' for ele in arr)):
 	if(iswild==1):
+	#each element on the board is indexed as a number 0-8 (sequentially, 0 being board[0][0]......8 being board[2][2]) 
 		return 4
 	else:
+	#corner elements are marked by 0,2,6,8 boxes on the board 
 		return (random.choice([0,2,6,8]))
 							
 ``` 
