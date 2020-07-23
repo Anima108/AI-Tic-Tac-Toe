@@ -1,14 +1,15 @@
 from tictactoe.winner import *
 
 def minimax(board, depth, isMaximizing,n):
+	# check for depth.
 	if depth==maxdepth:
 		return 0
-
+	# check if there is winner or not.
 	result =checkWinner(board,n)
 	if result!=None:
 		score=scores[result]
 		return score
-
+	# Turn of maximizing player.
 	if(isMaximizing):
 		bestScore = -1000
 			for i in range(n):
@@ -21,7 +22,7 @@ def minimax(board, depth, isMaximizing,n):
 						bestScore = max(score, bestScore)
 
 		return bestScore
-
+	# turn of Minimizing player.
 	else:
 		bestScore = 1000
 			for i in range(n):
