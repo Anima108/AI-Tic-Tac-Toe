@@ -203,10 +203,10 @@ Bootstrap is a free and open-source front-end library for creating websites and 
 
 -------------------------------------------------------------------------
 # Future Improvements :dart: :
-### - n x n board
-### - Online Integration
-### - Alpha Beta Pruning
-### - 3-D matrix
-### - Mobile compatibility
+**- n x n board  **
+**- Online Integration  **
+**- Alpha Beta Pruning  **
+**- 3-D matrix  **
+**- Mobile compatibility**
 
 
