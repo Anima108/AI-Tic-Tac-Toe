@@ -12,7 +12,8 @@
 - [x] **First Move**    : Don't wish to play the first move? No worries!  
 - [x] **Score Tracker** : Keep a track of all the games played yet  
 - [x] **Level**         : Are you a beginner? Or an expert? You'll not be disappointed  
-- [x] **Surprise Element**: Reverse Tic-Tac-Toe. Go wild! :neckbeard:  
+- [x] **Surprise Element**: Reverse Tic-Tac-Toe. Go wild! :neckbeard:
+- [x] **Optimised Version**: You can check how the game works without optimisation and with optimisation
 
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Features.png "Features")
 
