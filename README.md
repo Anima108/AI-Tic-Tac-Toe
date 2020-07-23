@@ -2,7 +2,7 @@
 
 #### A 'Mars Colonization :volcano:' theme web application which makes use of the minimax algorithm to create an unbeatable version of the famous Noughts and Crosses game!  
 
-![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Mars%20Colonization.png)  
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Mars%20Colonization.png "Mars Colonization")  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Have a Personalised Experience at Mars!  
@@ -15,7 +15,7 @@
 - [x] **Surprise Element**: Reverse Tic-Tac-Toe. Go wild! :neckbeard:
 - [x] **Optimised Version**: You can check how the game works without [optimisation](https://github.com/Anima108/My-Codes/blob/master/README.md#optimization-technique) and with optimisation
 
-![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Features.png "Features")
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Features.jpeg "Features")
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
