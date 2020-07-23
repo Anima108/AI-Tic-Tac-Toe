@@ -7,8 +7,12 @@ from tictactoe.conversion import *
 from tictactoe.minimax import *
 
 class AjaxHandlerView(View):
-	def get(self, request):			#if request is made to send View
-		if request.is_ajax():		#if AJAX call is made from JavaScript
+	
+	#request is made to send View
+	def get(self, request):	
+		
+		#if AJAX call is made from JavaScript
+		if request.is_ajax():		
 			vector= request.GET.getlist('array[]')
 			maxdepth= int(request.GET.get('difficulty_level'))
 			player_marker= request.GET.get('player_marker')
@@ -26,6 +30,8 @@ class AjaxHandlerView(View):
 
 			ai= opponent
 			human= player
+			
+			#convert the vector into 2-D board (see conversion.py)
 			board= onetotwod(vector,n)
 
 			scores={
@@ -36,7 +42,7 @@ class AjaxHandlerView(View):
 
 			
 			def bestMove():
-				#optimization correction
+				#if we want optimised version and the mode is set at unbeatable (maxdepth at unbeatable=n*n)
 				if maxdepth==n*n and optimization==1:
 					if(all(ele=='blank' for ele in vector)):
 						if(isWild):
@@ -60,7 +66,7 @@ class AjaxHandlerView(View):
 								bestScore=score
 								move=[i,j]
 
-				#board[move[0]][move[1]]=ai
+				#convert the 2-D index that best move has returned, into 1 location of block in 1-D array(see conversion.py)
 				index=twotooned(move[0],move[1],n)
 				return index
 
