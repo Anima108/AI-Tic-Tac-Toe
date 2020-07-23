@@ -187,5 +187,11 @@ Bootstrap is a free and open-source front-end library for creating websites and 
 [Frontend-II](https://github.com/alialaa/js-tic-tac-toe)  
 
 -------------------------------------------------------------------------
+# Future Work:
+- n x n board
+- Online Integration
+- Alpha Beta Pruning
+- 3-D matrix
+- Mobile compatibility
 
 
