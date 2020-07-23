@@ -36,6 +36,7 @@ It performs a depth-first search algorithm for the exploration of the complete g
 It proceeds all the way down to the terminal node of the tree, then backtracks the tree as the recursion.  
 
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/minimax2.png "MiniMax")
+[Img Source](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d#:~:text=Minimax%20is%20a%20recursive%20algorithm,minimize%20the%20worst%20case%20scenario)
 
 ----------------------------------------------------------------------
 # Important Code Segments  
@@ -54,7 +55,8 @@ if depth==maxdepth:
 	return 0
 ```
 
-![alt text](https://github.com/Anima108/My-Codes/blob/master/src/minimax1.png "Depth") 
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/minimax1.png "Depth")
+[Img Source](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d#:~:text=Minimax%20is%20a%20recursive%20algorithm,minimize%20the%20worst%20case%20scenario)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Do we have a winner yet?
