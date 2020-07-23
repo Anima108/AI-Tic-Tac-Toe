@@ -60,7 +60,7 @@ if depth==maxdepth:
 [Img Source](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d#:~:text=Minimax%20is%20a%20recursive%20algorithm,minimize%20the%20worst%20case%20scenario)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Do we have a winner yet?
+### Do we have a winner yet :crown:?
 
 This part checks whether we are at an ending position or not yet. Terminating position can be either of the three: AI loses, Human loses, Tie. If we are at any of these  
 states, we send back the score mapped in the python dictionary named score. '+1' if AI wins, '-1' if Human wins, '0' if tie (opposite in the case of Wild Tic-Tac-Toe)    
@@ -193,7 +193,7 @@ Bootstrap is a free and open-source front-end library for creating websites and 
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Link%20Flow%20diagram.png "Front-to-back")  
 
 -------------------------------------------------------------------
-# References:
+# References :books: :
 
 [AI Tic-Tac-Toe](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d#:~:text=Minimax%20is%20a%20recursive%20algorithm,minimize%20the%20worst%20case%20scenario)  
 [Minimax Algorithm-I](https://www.youtube.com/watch?v=trKjYdBASyQ)  
@@ -203,10 +203,10 @@ Bootstrap is a free and open-source front-end library for creating websites and 
 
 -------------------------------------------------------------------------
 # Future Improvements :dart: :
-- n x n board
-- Online Integration
-- Alpha Beta Pruning
-- 3-D matrix
-- Mobile compatibility
+### - n x n board
+### - Online Integration
+### - Alpha Beta Pruning
+### - 3-D matrix
+### - Mobile compatibility
 
 
