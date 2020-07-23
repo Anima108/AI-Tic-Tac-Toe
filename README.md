@@ -154,15 +154,15 @@ if(all(ele=='blank' for ele in arr)):
 ------------------------------------------------------
 The web app has the following components for the front-end functionality:  
   
-- 3x3 game board: This component displays the board on which game is played and handles the functionality of placing markers wherever clicked  
+- **3x3 game board**: This component displays the board on which game is played and handles the functionality of placing markers wherever clicked  
   
-- Sidebar for settings: This component contains various settings and options like selecting the opponent, starting player and marker. It also displays customizations like   suggestions and optimization  
+- **Sidebar for settings**: This component contains various settings and options like selecting the opponent, starting player and marker. It also displays customizations like   suggestions and optimization  
   
-- Difficulty level slider: This component sets the difficulty level of the game for the user ie the depth for the minimax algorithm  
+- **Difficulty level slider**: This component sets the difficulty level of the game for the user ie the depth for the minimax algorithm  
   
-- Controller buttons: This component contains buttons which control the type of gameplay like ‘regular’ or ‘wild’ and start a new game  
+- **Controller buttons**: This component contains buttons which control the type of gameplay like ‘regular’ or ‘wild’ and start a new game  
   
-- Score Board: This component keeps a track of scores of each player  
+- **Score Board**: This component keeps a track of scores of each player  
   
 
 
