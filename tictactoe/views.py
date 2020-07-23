@@ -27,8 +27,6 @@ class AjaxHandlerView(View):
 			ai= opponent
 			human= player
 			board= onetotwod(vector,n)
-			##please check isWild from here
-			##isWild #bool type
 
 			scores={
 				ai:-1 if isWild==1 else 1,
