@@ -164,7 +164,7 @@ The web app has the following components for the front-end functionality:
   
 - **Score Board**: This component keeps a track of scores of each player  
   
-
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/wireframes.jpg "WireFrames")
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Frameworks Used
