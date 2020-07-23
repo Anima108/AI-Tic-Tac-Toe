@@ -14,6 +14,8 @@ https://codess-tic-tac-toe.herokuapp.com/
 - [x] **Level**         : Are you a beginner? Or an expert? You'll not be disappointed  
 - [x] **Surprise Element**: Reverse Tic-Tac-Toe. Go wild! :neckbeard:  
 
+![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Features.png "Features")
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Languages Used:
